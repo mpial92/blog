@@ -1,0 +1,54 @@
+/*
+Theme Name:Theme enfant de theblog => theblog-child
+Description:Thème enfant pour theblog
+Author:Michel
+Template:theblog
+*/
+
+@import url("../theblog/style.css");
+
+/*---------------------------------------------------------------*/
+
+/* listes à puces*/
+
+ol.num {counter-reset: repas;} /* on initialise et nomme un compteur */
+
+ol.num li {
+    list-style-type: none;
+    counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
+    margin-bottom: 10px;
+}
+ol.num  li:before {
+    content: counter(repas); /* on affiche le compteur */
+    padding: 0 20px 6px;
+    margin-right: 8px;
+    vertical-align: top;
+    background: #678;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;		
+}
+.art{
+	font-family: arial,helvetica,sans-serif;
+	font-size: 14pt;	
+}		
+
+.hover-highlight{
+	color:red !important;
+	text-decoration:none !important;
+}
+
+strong  a{ 
+	font-size : 1.2em ;
+}
+
+article  a{ 
+	font-size: 13px;
+	text-decoration:none !important;
+	color: #3C444F!important;
+}
+}
+/*---------------------------------------------------------------*/
+
